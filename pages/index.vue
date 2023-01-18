@@ -40,7 +40,7 @@
           <h3 class="flex justify-around flex-row mx-auto items-center text-black py-3 bg-orange-400 rounded max-w-md"
             v-show="close">
             <span> {{ success }}</span>
-            <button class="bg-white rounded-full p-2 py-1" @click="disable">✕</button>
+            <button class="bg-white rounded p-2 py-1" @click="disable">✕</button>
           </h3>
           <div class="mt-6 grid grid-cols-2 gap-y-2 gap-x-1 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-2">
             <div v-for="product in products" :key="product.id" class="ring-1 ring-orange-300 p-1 rounded">
@@ -186,7 +186,7 @@
               </td>
               <td class="px-4 py-3 text-xs">
                 <span
-                  class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full dark:bg-green-700 dark:text-green-100">
+                  class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded dark:bg-green-700 dark:text-green-100">
                   {{ order.status }}
                 </span>
               </td>
